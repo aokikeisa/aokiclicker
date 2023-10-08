@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+</body>
+<div id="main">
+    <div id="aokitext" onclick="keisa()"></div>
+    <div id="code" onclick="keisacode()">code</div>
+</div>
+    <script>
+        let aoki = 0;
+        function keisa(){
+            aoki++
+            const element = document.getElementById('aokitext');
+            element.innerHTML = '<p id="aokinum">' + aoki + '</p>';
+        }
+        function keisacode(){
+            location.href='link'
+        }
+    </script>
+    <style>
+        #main{
+            text-align: center;
+        }
+        #aokitext{
+            height: 70vh;
+            width: 96vw;
+            background-color: white;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #aokinum{
+            text-align: center;
+            font-size: 10vw;
+        }
+        #code{
+            cursor: pointer;
+        }
+    </style>
+</body>
+</html>
